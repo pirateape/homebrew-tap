@@ -9,8 +9,8 @@
 class Apeguard < Formula
   desc "One-command security posture assessment — layered scans, Zero Trust mapping, multi-audience reports"
   homepage "https://github.com/pirateape/ape-guard"
-  url "https://github.com/pirateape/ape-guard/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "a2be81833ba7c76c582986d56ad78dcdad6ca146e4977d7c6df5a7889872b33d"
+  url "https://github.com/pirateape/ape-guard/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "1837251f34c5d758e2e3257154597f3ae35d3def37906faf1c78def614552e3c"
   license "Elastic-2.0"
   head "https://github.com/pirateape/ape-guard.git", branch: "main"
 
@@ -19,6 +19,8 @@ class Apeguard < Formula
   depends_on "semgrep" => :recommended
   depends_on "trivy" => :recommended
   depends_on "nuclei" => :optional
+  depends_on "checkov" => :optional
+  depends_on "syft" => :optional
 
   def install
     system "cargo", "install", *std_cargo_args
