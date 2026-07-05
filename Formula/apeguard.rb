@@ -10,7 +10,7 @@ class Apeguard < Formula
   desc "One-command security posture assessment — layered scans, Zero Trust mapping, multi-audience reports"
   homepage "https://github.com/pirateape/ape-guard"
   url "https://github.com/pirateape/ape-guard/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "23123ec8fb6755b4bf573ac97d5c77f515e97e6475f523356218be6e429b95ac"
+  sha256 "eae5711a4c1535ffa3fe4c4c4c10c767195dec0b37e6ef56d92857b694de176a"
   license "Elastic-2.0"
   head "https://github.com/pirateape/ape-guard.git", branch: "main"
 
